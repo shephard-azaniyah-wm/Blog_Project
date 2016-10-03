@@ -1,0 +1,38 @@
+div.body form {
+    background-image: url("http://il8.picdn.net/shutterstock/videos/6718192/thumb/1.jpg");
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+div.body div.posts div.p1 {
+    border: dotted rebeccapurple;
+}
+
+div.body {
+    text-align: center;
+    padding: 23px 34px 23px 34px;
+    background: rgba(224,193,230,1);
+    background: -moz-linear-gradient(left, rgba(224,193,230,1) 0%, rgba(174,116,207,1) 41%, rgba(165,113,168,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(224,193,230,1)), color-stop(41%, rgba(174,116,207,1)), color-stop(100%, rgba(165,113,168,1)));
+    background: -webkit-linear-gradient(left, rgba(224,193,230,1) 0%, rgba(174,116,207,1) 41%, rgba(165,113,168,1) 100%);
+    background: -o-linear-gradient(left, rgba(224,193,230,1) 0%, rgba(174,116,207,1) 41%, rgba(165,113,168,1) 100%);
+    background: -ms-linear-gradient(left, rgba(224,193,230,1) 0%, rgba(174,116,207,1) 41%, rgba(165,113,168,1) 100%);
+    background: linear-gradient(to right, rgba(224,193,230,1) 0%, rgba(174,116,207,1) 41%, rgba(165,113,168,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0c1e6', endColorstr='#a571a8', GradientType=1 );}
+}
+
+div.body form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
