@@ -1,5 +1,7 @@
 <?php
-require 'JavaScript/blogpost.php';
+require 'blogpost.php';
+
+require 'Tags.php';
 
 $databases = new Database;
 
@@ -43,14 +45,16 @@ if(@$post['submit']) {
         echo '<p>Post Added!</p>';
     }
 }
-$databases->query('SELECT * FROM blog_post');
-$rows = $databases->resultset();
+
+$tags = new tags();
+$tags->query('SELECT * FROM blog_post');
+$rows = $tags->resultset();
 
 
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
 <div class="body">
 <h1>Add Posts</h1>
@@ -80,13 +84,17 @@ $rows = $databases->resultset();
                 <?php echo $row['title'];?>
             </h3>
             <p>
-                <?php echo $row ['post']; ?>
+                <?php echo $row['post']; ?>
             </p>
             <br />
 
             <span class="footer">
                 <?php echo 'Date Created: ' .$row['date']; ?>
             </span>
+
+            <p>
+                <?php echo $row['tags']; ?>
+            </p>
 
         </div>
 
@@ -95,8 +103,9 @@ $rows = $databases->resultset();
             <input type="hidden" name="delete_id" value="<?php echo $row['id'] ?>">
             <input type="submit" name="delete" value="Delete" />
         </form>
-    </div>
-</div>
-    <?php endforeach; ?>
-</div>
 
+    <?php endforeach; ?>
+     </div>
+  </div>
+
+</div>

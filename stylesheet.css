@@ -10,10 +10,6 @@ div.body form {
 }
 
 
-div.body div.posts div.p1 {
-    border: dotted rebeccapurple;
-}
-
 div.body {
     text-align: center;
     padding: 23px 34px 23px 34px;
@@ -36,3 +32,7 @@ div.body form input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+
+
+
